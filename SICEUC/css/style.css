@@ -1,0 +1,40 @@
+lement.style {
+    display: block;
+    width: 200px;
+    height: 25px;
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: center;
+    color: #08F;
+    line-height: 25px;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a {
+    color: #263A17;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #666666;
+    background-color: #ffffff;
+}
+injected stylesheet
+:host, :root {
+    --rem: 16;
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}

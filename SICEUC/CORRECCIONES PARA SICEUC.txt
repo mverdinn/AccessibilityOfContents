@@ -1,0 +1,13 @@
+CORRECCIONES PARA SICEUC:
+From the automatic evaluation:
+1. Insufficient contrast ratio.
+2. Images without alt text.
+3. Input text not associated with labels.
+
+Non-automatic:
+4. Missing h1.
+5. Links need better text.
+6. Links that do not look like links (either not underlined or not in a different color).
+7. Incorrect language of page.
+8. The message about the password is away from the password input text.
+ 
