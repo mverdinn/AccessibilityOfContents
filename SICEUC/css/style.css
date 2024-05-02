@@ -38,3 +38,32 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+
+a.accordion-toggle{
+    color:#666;
+    font-weight: bold;
+  }
+  .accordion-group{
+    display:block !important;
+  }
+  #accordion1 h3,
+  #accordion2 h3{
+    margin:25px 0 10px;
+    padding:0;
+  }
+  .collapse ul{
+    margin:0;
+  }
+  .collapse li{
+    list-style:none;
+    
+  }
+  .collapse li a{
+    margin-left:10px;
+  }
+  .collapse li a:before{
+    display:inline-block;
+    position:relative;
+    content:"- ";
+    margin-right: 2px;
+  }
