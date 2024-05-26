@@ -1,0 +1,169 @@
+header {
+    background-color: #092b5a; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 1px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    position: fixed; /* Fijar el encabezado en la parte superior */
+  width: 100%; /* Ancho completo */
+  top: 0; /* Posición desde arriba */
+  left: 0; /* Posición desde la izquierda */
+  z-index: 1000; /* Asegurar que el encabezado esté por encima de otros elementos */
+  }
+  
+  
+  body{
+    background-color: #aee1d3;
+    text-align:center;/* ubicación del texto */
+    margin-left: 220px; /* Dejar espacio a la izquierda para la barra lateral */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 130px; /* Ajustar el margen superior para evitar solapamiento con el encabezado */
+  }
+  
+  /*editar la barra vertical */
+  aside {
+    width: 200px; /* Ancho de la barra lateral */
+    height: calc(100% - 60px); /* Altura ajustada para excluir el encabezado */
+    background-color: #16c1c8; /* Color de fondo */
+    position: fixed; /* Fijar la barra lateral en la pantalla */
+    top: 115px; /* Posición desde arriba */
+    left: 0; /* Posición desde la izquierda */
+    padding: 15px; /* Espaciado interno */
+    overflow-y: auto; /* Habilitar desplazamiento vertical si el contenido es demasiado largo */
+  }
+  
+  h1{
+  
+    color:rgb(255, 255, 255);  /*color de letra */
+    font-size:50px;/*tamaño de letra */
+    font-family:fantasy;/*tipo de letra */
+    font-weight:bold;
+    font-style:italic;
+    line-height:50px;/* espacio */
+    letter-spacing:20px;/* espacio entre letras */
+    text-transform:capitalize;
+    text-align:center;/* ubicación del texto */
+    text-indent:30px;
+  }
+  
+  #addForm button {
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #2d90ac; /* Color de fondo azul */
+    color: #000000; /* Color de texto blanco */
+    border-width:2px;/* tamaño del borde */
+    border-color:rgb(52, 21, 230);/* color del borde */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  }
+  
+  h2{
+    line-height:50px;/* espacio */
+  }
+  
+  /* Estilo para los campos de entrada de texto */
+  input[type="text"],
+  input[type="number"] {
+  width: 30%;
+  padding: 10px; /* Espacio alrededor del texto dentro del campo */
+  margin-bottom: 1px; /* Espacio entre cada campo */
+  border: 2px solid #cbbcbc; /* Borde del campo */
+  border-radius: 10px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total */
+  }
+  
+  /* Estilos para los botones de eliminar y editar */
+  button.deleteButton,
+  button.editButton {
+  padding: 5px 10px; /* Ajuste el relleno según sea necesario */
+  color: #fff; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin-right: 5px; /* Espacio a la derecha del botón */
+  }
+  
+  button.deleteButton {
+    background-color: #b90b1c; /* Color de fondo rojo para el botón de eliminar */
+  }
+  
+  button.editButton {
+  background-color: #1eff00; /* Color de fondo azul para el botón de editar */
+  }
+  
+  #userTable {
+  margin: 0 auto; /* Esto centra la tabla horizontalmente */
+  }
+  
+  #guardarCambios {
+  display: block; /* Hacer que el botón sea un bloque */
+  margin: 0 auto; /* Esto centra el botón horizontalmente */
+  }
+  
+  #CancelarCambios {
+    display: block; /* Hacer que el botón sea un bloque */
+    margin: 0 auto; /* Esto centra el botón horizontalmente */
+    }
+  
+  
+  
+  /* Estilo para la tabla y las celdas */
+  table {
+  border-collapse: collapse; /* Combinar los bordes de las celdas en un solo borde */
+  width: 100%; /* Ancho completo de la tabla */
+  }
+  
+  th, td {
+  border: 1px solid black; /* Borde de 1 píxel sólido */
+  padding: 8px; /* Espaciado interior de las celdas */
+  text-align: left; /* Alinear el texto a la izquierda */
+  }
+  
+  /* Estilo para las celdas de encabezado de la tabla*/
+  th {
+  background-color: #036564; /* Color de fondo gris claro */
+  }
+  
+  .menu a {
+  color: black;
+  }
+  
+  .menu a.active {
+  background-color: rgb(141, 140, 140);
+  color: rgb(44, 43, 43);
+  }
+  
+  
+  #inicio {
+  display: block;
+  font-family:Arial, sans-serif; /*Cambia la fuente del texto */
+  text-align: center; /* Centra el texto */
+  }
+  
+  .logo {
+  /* Ajusta el tamaño de la imagen */
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  }
+  
+  #inicio h2 {
+  /* Ajusta el tamaño y el tipo de letra del texto en cursiva */
+  font-size: 20px; /* Tamaño del texto */
+  font-style: italic;/*  Estilo de la fuente */
+  }
+  
+  footer {
+  background-color: #1c1a1a; /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto del pie de página */
+  padding: 0.1px 0; /* Espaciado interno superior e inferior */
+  text-align: center; /* Alinear texto al centro */
+  position: fixed; /* Fijar el pie de página en la parte inferior */
+  width: 100%; /* Ancho del pie de página, menos 40px para dejar espacio a cada lado */
+  bottom: 0; /* Posición desde la parte inferior */
+  left: 0; /* Espacio a la izquierda */
+  z-index: 1000; /* Asegurar que el pie de página esté por encima de otros elementos */
+  }
+  
+  #userTable {
+  margin-bottom: 50px; /* Agrega un margen inferior para evitar que el contenido se solape con la barra inferior */
+  }
