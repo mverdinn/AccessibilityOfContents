@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exam.css">  <!-- Enlazar el css -->
+
+    <title> LIBRERÍA </title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>   
+
+<body>
+    
+<header>
+    <h1>Textos Verdí</h1>
+</header>
+
+<aside>
+    <nav class="menu">
+        <ul>
+            <li> <a href="#" onclick="goini()" id="ini">Inicio</a> </li> 
+            <li> <a href="#" onclick="gomenu()" id="ver-menu">Promociones del mes</a>  </li>   
+            <li> <a href="#" onclick="goGemenu()" id="gestionar-menu">Lista de espera</a> </li> 
+            <li> <a href="https://portal.ucol.mx/dgti/bvirtual.htm" target="_blank"> Sitio colaborador </a> </li>
+
+        </ul>
+    </nav>
+</aside>
+
+<!-- ///////////////////////////////////////////////////////////INICIO -->
+<div id = "inicio" style="display: block;">
+   <img class="logo" src="logo.png" alt="" role="presentation"> <!-- role= "presentation"  es para que se considere imagen decorativa-->
+   <h2> "Leer es equivalente a pensar con la cabeza de otra persona en lugar de con la propia". </h2>
+   <h3> -Arthur Schopenhaue </h3>
+   <p> El hábito de la lectura puede enriquecer el conocimiento, estimular la imaginación, mejorar la comprensión lectora y fomentar la adquisición de información y el pensamiento crítico. </p> 
+   <p> Es clave mencionar que no existe una fórmula mágica para crear el hábito de la lectura. Se trata de querer construir este hábito por todos los beneficios que tiene y también por todas las oportunidades de crecimiento personal que pueden surgir a partir de la lectura. 
+
+    <a href="http://repositorio.ucp.edu.pe/handle/UCP/1313#:~:text=Por%20lo%20general%20el%20h%C3%A1bito,procesos%20de%20h%C3%A1bitos%20de%20lectura."> Articulo sobre la importancia de la lectura</a>
+   </p>
+
+
+   <div>
+    <img src="contexto.jpg" alt="Anuncio sobre horarios.">
+</div>
+
+</div>
+
+
+<!-- ///////////////////////////////////////////////////////////PROMOCIONES DEL MES -->
+<div id = "menu" style="display: none;">
+    <img src="promocional.jpg" alt="Cartel informativo sobre el lanzamiento de un nuevo libro que tendrá promoción.">
+
+    <br>
+
+<div>
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+</div>
+</body>
+</div>
+
+
+
+<!-- ///////////////////////////////////////////////////////////LISTA DE ESPERA -->
+<div id = "Formulario" style="display: none;">
+    <h2>Lista de espera</h2>
+
+    <p> Estimado usuario, debido a la alta demansa sobre algunos libros con poco abastecimiento se solita de su apoyo en el registro de lista de espera para adquierirlo.</p>
+
+    <!-- Formulario para agregar un nuevo usuario -->
+    <form id="addForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" aria-required="true">
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" aria-required="true">
+        <br><br>
+
+        <label for="pos">Teléfono:</label>
+        <input type="number" id="pos" name="pos" aria-required="true">
+        <br><br>
+
+
+        
+<label for="estadios">Editorial:</label><br>
+<input type="radio" id="estadioOlimpico" name="estadios" value="Patria">
+<label for="estadioOlimpico">Patria</label><br>
+<input type="radio" id="estadioSanJorge" name="estadios" value="McGrill">
+<label for="estadioSanJorge">McGrill</label><br>
+<input type="radio" id="estadioColima" name="estadios" value="Otra">
+<label for="estadioColima">Otra</label><br>
+<br>
+<label for="equipo">Campus:</label>
+<select id="equipo" name="equipo" required>
+    <option value="Colima">Colima</option>
+    <option value="Villa de Álvarez">Villa de Álvarez</option>
+    <option value="Coquimatlán">Coquimatlán</option>
+</select>
+<br><br>
+
+        <!-- Botón para agregar los datos -->
+        <button type="submit">Agregar</button>
+        <br><br>
+        <!-- Botón para guardar cambios -->
+        <button role="status" type="button" id="guardarCambios" style="display: none;">Guardar cambios</button>
+        <br>
+        <button role="status" type="button" id="CancelarCambios" style="display: none;">Cancelar cambios</button>
+    </form>
+
+
+<!--<button> Registar</button>-->
+
+<div role="button" tabindex="0"></div>
+
+
+    <!-- Lista de usuarios agregados -->
+    <h2>Lista de espera para pedido de libros</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th scope="col" style="color: aliceblue;">Nombre</th>
+                <th scope="col" style="color: aliceblue;">Edad</th>
+                <th scope="col" style="color: aliceblue;">Teléfono</th>
+                <!-- <th scope="col" style="color: aliceblue;">Patrocinador</th> --> 
+                <th scope="col" style="color: aliceblue;">Editorial</th>
+                <th scope="col" style="color: aliceblue;">Campus</th>
+                <th scope="col" style="color: aliceblue;">Acciones</th>  
+                
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>  
+    </table>
+</div>
+    
+    
+    <!-- Enlazar el html a js -->
+    <script src="exam.js"></script> 
+    
+    
+   <!--
+     <footer>
+        <p>Derechos Reservados &copy; 2024</p>
+    </footer>
+   -->
+    
+
+</body>
+</html>
